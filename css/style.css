@@ -1,0 +1,434 @@
+/*
+    ORBIT DRIVING SCHOOL
+    Developed by AMAL THIRUTHOOR
+    All Rights Reserved
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #111111;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    background: #111111;
+    color: #ffffff;
+    padding: 18px 15px;
+    border-bottom: 4px solid #ff7a00;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+}
+
+.logo-area .logo {
+    width: 35px !important;
+    height: 35px !important;
+    max-width: 35px !important;
+    max-height: 35px !important;
+    object-fit: contain;
+    display: block;
+}
+
+.brand-text h1 {
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.brand-text p {
+    margin-top: 3px;
+    color: #dddddd;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container {
+    width: 92%;
+    max-width: 600px;
+    margin: 22px auto 30px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    text-align: center;
+    padding: 10px 8px 22px;
+}
+
+.small-title {
+    color: #ff7a00;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 7px;
+}
+
+.hero h2 {
+    font-size: 27px;
+    margin-bottom: 9px;
+}
+
+.hero p:last-child {
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   BOOKING CARD
+========================= */
+
+.booking-card {
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+}
+
+.booking-card > h2 {
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 22px;
+}
+
+.booking-card > h2::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 4px;
+    background: #ff7a00;
+    margin: 9px auto 0;
+    border-radius: 5px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form-group {
+    margin-bottom: 19px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #222222;
+}
+
+.optional {
+    color: #888888;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #cccccc;
+    border-radius: 9px;
+    font-family: inherit;
+    font-size: 15px;
+    background: #ffffff;
+    color: #111111;
+    outline: none;
+    transition: 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #ff7a00;
+    box-shadow: 0 0 0 3px rgba(255, 122, 0, 0.12);
+}
+
+.form-group textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+
+/* =========================
+   TIME
+========================= */
+
+.time-section h3 {
+    font-size: 14px;
+    margin: 4px 0 10px;
+    color: #555555;
+}
+
+.afternoon-title {
+    margin-top: 20px !important;
+}
+
+.time-slots {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 9px;
+}
+
+.time-slot {
+    padding: 11px 5px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #111111;
+    text-align: center;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 13px;
+    transition: 0.2s;
+}
+
+.time-slot:hover {
+    border-color: #ff7a00;
+    color: #ff7a00;
+}
+
+.time-slot.selected {
+    background: #ff7a00;
+    border-color: #ff7a00;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+
+/* =========================
+   CONFIRM BUTTON
+========================= */
+
+.confirm-button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 3px;
+    border: none;
+    border-radius: 10px;
+    background: #ff7a00;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.confirm-button:hover {
+    background: #e66d00;
+}
+
+.confirm-button:active {
+    transform: scale(0.98);
+}
+
+
+/* =========================
+   BOOKING MESSAGE
+========================= */
+
+.booking-message {
+    display: none;
+    margin-top: 15px;
+    padding: 13px;
+    border-radius: 9px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.booking-message.success {
+    display: block;
+    background: #eeeeee;
+    border: 1px solid #bbbbbb;
+    color: #111111;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-box {
+    margin-top: 20px;
+    padding: 22px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.contact-box h3 {
+    font-size: 20px;
+}
+
+.contact-box p {
+    margin-top: 7px;
+    color: #666666;
+    font-size: 14px;
+}
+
+
+/* =========================
+   CONTACT BUTTONS
+========================= */
+
+.contact-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.contact-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    min-height: 58px;
+    padding: 10px 12px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: 0.25s ease;
+    border: 2px solid transparent;
+}
+
+.contact-icon {
+    font-size: 21px;
+    line-height: 1;
+}
+
+.contact-btn strong {
+    display: block;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.contact-btn small {
+    display: block;
+    margin-top: 3px;
+    font-size: 11px;
+    opacity: 0.75;
+}
+
+
+/* Call */
+
+.call-btn {
+    background: #111111;
+    color: #ffffff;
+}
+
+.call-btn:hover {
+    background: #ff7a00;
+    border-color: #ff7a00;
+    transform: translateY(-2px);
+}
+
+
+/* WhatsApp */
+
+.whatsapp-btn {
+    background: #ffffff;
+    color: #111111;
+    border-color: #111111;
+}
+
+.whatsapp-btn:hover {
+    background: #111111;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    padding: 22px 10px;
+    background: #111111;
+    color: #cccccc;
+    font-size: 13px;
+}
+
+footer span {
+    color: #ff7a00;
+    font-weight: 700;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    .header {
+        padding: 16px 12px;
+    }
+
+    .logo-area .logo {
+        width: 32px !important;
+        height: 32px !important;
+        max-width: 32px !important;
+        max-height: 32px !important;
+    }
+
+    .brand-text h1 {
+        font-size: 22px;
+    }
+
+    .container {
+        width: 94%;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .booking-card {
+        padding: 20px;
+    }
+
+    .time-slots {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-buttons {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-btn {
+        min-height: 56px;
+    }
+}

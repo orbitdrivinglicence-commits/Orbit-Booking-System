@@ -1,0 +1,312 @@
+<!--
+    ORBIT DRIVING SCHOOL
+    Developed by AMAL THIRUTHOOR
+    All Rights Reserved
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ORBIT Driving School - Book an Appointment</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="logo-area">
+
+            <img
+                src="assets/logo.png"
+                alt="ORBIT Driving School Logo"
+                class="logo"
+            >
+
+            <div class="brand-text">
+                <h1>ORBIT</h1>
+                <p>DRIVING SCHOOL</p>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- Main -->
+    <main class="container">
+
+        <!-- Hero -->
+        <section class="hero">
+
+            <p class="small-title">ORBIT DRIVING SCHOOL</p>
+
+            <h2>Book Your Appointment</h2>
+
+            <p>
+                Choose your service, date and preferred time.
+                We will be ready to assist you.
+            </p>
+
+        </section>
+
+
+        <!-- Booking Card -->
+        <section class="booking-card">
+
+            <h2>Book Now</h2>
+
+
+            <!-- Service -->
+            <div class="form-group">
+
+                <label for="service">
+                    Select Service
+                </label>
+
+                <select id="service">
+
+                    <option value="">
+                        -- Select a Service --
+                    </option>
+
+                    <option value="New Learner's Licence Registration/Application">
+                        New Learner's Licence Registration/Application
+                    </option>
+
+                    <option value="Driving Licence Renewal">
+                        Driving Licence Renewal
+                    </option>
+
+                    <option value="Licence Related Other Services">
+                        Licence Related Other Services
+                    </option>
+
+                    <option value="Driving Class Enquiry">
+                        Driving Class Enquiry
+                    </option>
+
+                    <option value="RC Related Services">
+                        RC Related Services
+                    </option>
+
+                    <option value="Vehicle Fitness/Permit/Tax Services">
+                        Vehicle Fitness/Permit/Tax Services
+                    </option>
+
+                    <option value="Insurance Services">
+                        Insurance Services
+                    </option>
+
+                    <option value="Other Online Services">
+                        Other Online Services
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Date -->
+            <div class="form-group">
+
+                <label for="date">
+                    Select Date
+                </label>
+
+                <input
+                    type="date"
+                    id="date"
+                >
+
+            </div>
+
+
+            <!-- Time -->
+            <div class="form-group">
+
+                <label>
+                    Select Time
+                </label>
+
+                <div class="time-section">
+
+                    <h3>Morning</h3>
+
+                    <div class="time-slots">
+
+                        <button type="button" class="time-slot">9:00 AM</button>
+                        <button type="button" class="time-slot">9:15 AM</button>
+                        <button type="button" class="time-slot">9:30 AM</button>
+                        <button type="button" class="time-slot">9:45 AM</button>
+                        <button type="button" class="time-slot">10:00 AM</button>
+                        <button type="button" class="time-slot">10:15 AM</button>
+                        <button type="button" class="time-slot">10:30 AM</button>
+                        <button type="button" class="time-slot">10:45 AM</button>
+                        <button type="button" class="time-slot">11:00 AM</button>
+                        <button type="button" class="time-slot">11:15 AM</button>
+                        <button type="button" class="time-slot">11:30 AM</button>
+                        <button type="button" class="time-slot">11:45 AM</button>
+                        
+                    </div>
+
+
+                    <h3 class="afternoon-title">
+                        Afternoon
+                    </h3>
+
+                    <div class="time-slots">
+
+                        <button type="button" class="time-slot">2:00 PM</button>
+                        <button type="button" class="time-slot">2:15 PM</button>
+                        <button type="button" class="time-slot">2:30 PM</button>
+                        <button type="button" class="time-slot">2:45 PM</button>
+                        <button type="button" class="time-slot">3:00 PM</button>
+                        <button type="button" class="time-slot">3:15 PM</button>
+                        <button type="button" class="time-slot">3:30 PM</button>
+                        <button type="button" class="time-slot">3:45 PM</button>
+                        <button type="button" class="time-slot">4:00 PM</button>
+                        <button type="button" class="time-slot">4:15 PM</button>
+                        <button type="button" class="time-slot">4:30 PM</button>
+                        <button type="button" class="time-slot">4:45 PM</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Customer Details -->
+            <div class="form-group">
+
+                <label for="name">
+                    Your Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    autocomplete="name"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="phone">
+                    Phone Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Enter 10-digit mobile number"
+                    maxlength="10"
+                    inputmode="numeric"
+                    autocomplete="tel"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="remarks">
+                    Remarks
+                    <span class="optional">(Optional)</span>
+                </label>
+
+                <textarea
+                    id="remarks"
+                    placeholder="Any additional information..."
+                ></textarea>
+
+            </div>
+
+
+            <!-- Confirm -->
+            <button
+                type="button"
+                id="confirmBooking"
+                class="confirm-button"
+            >
+                Confirm Booking
+            </button>
+
+
+            <!-- Message -->
+            <div
+                id="bookingMessage"
+                class="booking-message"
+            ></div>
+
+        </section>
+
+
+        <!-- Contact -->
+        <section class="contact-box">
+
+            <h3>Need Help?</h3>
+
+            <p>
+                Contact ORBIT Driving School directly.
+            </p>
+
+            <div class="contact-buttons">
+
+                <a
+                    href="tel:+919947654551"
+                    class="contact-btn call-btn"
+                >
+                    <span class="contact-icon">☎</span>
+
+                    <span>
+                        <strong>Call Us</strong>
+                        <small>Speak with us</small>
+                    </span>
+                </a>
+
+
+                <a
+                    href="https://wa.me/918304855251"
+                    class="contact-btn whatsapp-btn"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    <span class="contact-icon">☘</span>
+
+                    <span>
+                        <strong>WhatsApp</strong>
+                        <small>Chat with us</small>
+                    </span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        © 2026
+        <span>ORBIT Driving School</span>.
+        All Rights Reserved.
+
+    </footer>
+
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
